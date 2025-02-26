@@ -1,0 +1,20 @@
+<!-- <ng-template #myTemplate>
+    <p>This is a dynamically rendered template!</p>
+  </ng-template>
+  
+  
+  <button (click)="showTemplate = true">Render Template</button>
+  
+  
+ @if(showTemplate){
+    <div>
+        <ng-container *ngTemplateOutlet="myTemplate"></ng-container>
+      </div>
+ }
+   -->
+
+ <ng-template #trying let-user="user" style="text-align: center;">
+    Hi <b>{{user}}</b> welcome to the coding environment
+ </ng-template>
+ 
+ <ng-container *ngTemplateOutlet="trying; context: {user: 'Ashfaq Hussain'}"></ng-container>
